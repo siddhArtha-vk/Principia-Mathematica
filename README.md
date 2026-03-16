@@ -1,2 +1,2 @@
-# Principia-Mathematica
-Principles of Mathemstics
+# Principia Mathematica
+Principles of Mathematics
