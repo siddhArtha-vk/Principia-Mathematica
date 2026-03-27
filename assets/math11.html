@@ -1,0 +1,996 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathematics 11</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <table style="font-size: 20px;">
+    <tr>
+      <td colspan="2" align="center"><b>Contents</b></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Unit</b></td>
+      <td align="center"><b>Chapter</b></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>1. Algebra</b></td>
+      <td><b>1. Logic, Sets and Real Number System<br>2. Functions<br>3. Curve Sketching<br>4. Sequence and Series<br>5. Matrices and Determinants<br>6. Quadratic Equations<br>7. Complex Numbers</b></td>
+    </tr>
+    <tr>
+      <td><b>2. Trigonometry</b></td>
+      <td><b>8. Inverse Circular Functions and Trigonometric Equations</b></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>3. Analytic Geometry</b></td>
+      <td><b>9. Analytic Geometry<br>10. Pair of Straight Lines<br>11. Coordinates in Space</b></td>
+    </tr>
+    <tr>
+      <td><b>4. Vectors</b></td>
+      <td><b>12. Vectors</b></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>5. Statistics and Probability</b></td>
+      <td><b>13. Measure of Dispersion<br>14. Probability</b></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>6. Calculus</b></td>
+      <td><b>15. Limits and Continuity<br>16. The Derivatives<br>17. Applications of Derivatives<br>18. Antiderivatives</b></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>7. Computational Methods</b></td>
+      <td><b>19. Numerical Computation<br>20. Numerical Integration</b></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>8. Mechanics</b></td>
+      <td><b>21. Statics<br>22. Dynamics</b></td>
+    </tr>
+  </table>
+  <center>
+  <h1>Unit 1 : Algebra</h1>
+  </center>
+  <h2>Chapter 1 - Logic, Sets and Real Number System</h2>
+  <div class="index">
+    <ol>
+      <li>Logic</li>
+      <ol type="a">
+        <li>Logic</li>
+        <li>Statement</li>
+        <ol type="i">
+          <li>Types of Statement</li>
+        </ol>
+        <li>Truth value and Truth table</li>
+        <li>Logical Connectives</li>
+        <li>Terminology</li>
+        <li>Laws of Logic</li>
+        <ol type="i">
+          <li>Primary Laws of Logic</li>
+          <li>Secondary Laws of Logic</li>
+        </ol> 
+      </ol>
+      <li>Sets</li>
+      <ol type="a">
+        <li>Review of Sets</li>
+        <li>Theorems based on Set Operation</li>
+        <ol type="i">
+          <li>Properties of Inclusion and Equality Relations</li>
+          <li>Properties of Unions</li>
+          <li>Properties of Intersections</li>
+          <li>Miscellaneous Properties</li>
+        </ol>
+      </ol>
+      <li>Real Number System</li>
+      <ol type="a">
+        <li>Review of Real Numbers</li>
+        <li>Properties of Real Numbers</li>
+        <li>Order Property</li>
+        <li>Representation of a Real Number in a Real Number Line</li>
+        <li>Interval</li>  
+        <li>Absolute Value</li>        
+      </ol>
+    </ol>
+  </div>
+  <hr>
+  <b style="background-color: yellow;">#Logic</b>
+  <p>Logic (derived from word 'Logos' which means reason) is the science of reasoning. Logic tells us the truth and the falsity of the particular statement. Logic is the process by which we arrive at a conclusion from the given statement with a valid reason.</p>
+  <p>There are 2 types of reasoning:</p>
+  <ol>
+    <li>Inductive reasoning (Reasoning a particular case from observation)</li>
+    <li>Deductive reasoning (Reasoning a particular case from a general case)</li>
+  </ol>
+  <p>In logic, we use symbols for words, statements and their relations to get the required result. Hence, logic is known as mathematical logic or symbolic logic.</p>
+
+  <b style="background-color: yellow;">#Statement</b>
+  <p>A statement is an assertion (declaration) expressed in words or symbols, which is either true or false but not both at the same time. In the context of logic, a statement cannot be imperative, interrogative or exclamatory.</p>
+  <table>
+    <tr>
+      <td colspan="2" align="center"><b>Types of Statement</b></td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: top; text-align: left;"><b>On the basis of truth value</b></td>
+      <td><b>Open statement:</b> An open statement is the statement whose truth or falsity can be decided after filling the gap in them or substituting the value of the variable.</td>
+    </tr>
+    <tr>
+      <td><b>Closed statement:</b> A closed statement is the statement whose truth or falsity cannot be decided. It does not have a gap as the open statement.</td>
+    </tr>
+     <tr>
+      <td rowspan="2" style="vertical-align: top; text-align: left;"><b>On the basis of structure</b></td>
+      <td><b>Simple statement:</b> A simple statement is the statement which declares only one thing. It cannot be divided into two or more statements.</td>
+    </tr>
+    <tr>
+      <td><b>Compound statement:</b> A compound statement is the combination of two or more simple statements. It can be divided into two or more statements which are called component statements.</td>
+    </tr>
+  </table>
+  <hr>
+  <b style="background-color: yellow;">#Truth Value and Truth Table</b>
+  <p>Truth value refers to the truth or falsity of a statement. T &#8594; Statement is True and F &#8594; Statement is False. The truth value of a simple statement depends upon only the given statement. But in a compound statement, its truth value depends on both the component statement and the connectives used.</p>
+  <p>Truth table is the table presenting the truth values of the component statements together with their truth values.</p>
+
+  <b style="background-color: yellow;"> #Logical Connective</b>
+  <p>Logical connectives are the words or phrases which connect the component statements in a compound statement. All the logical connectives are given below:</p>
+  <table>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Connective</b></td>
+      <td style="vertical-align: top; text-align: left;"><b>Symbol</b></td>
+      <td style="vertical-align: top; text-align: left;"><b>Definition</b></td>
+      <td colspan="3" style="vertical-align: top; text-align: left;"><b>Truth Table</b></td>
+    </tr>
+    <tr>
+      <td rowspan="5" style="vertical-align: top; text-align: left;"><b>Conjucntion</b></td>
+      <td rowspan="5" style="vertical-align: top; text-align: center">\( \wedge \)</td>
+      <td rowspan="5" style="vertical-align: top; text-align: left;">Two simple statements combined by the word 'and' (or an equivalent word), to form a compound statement, is known as conjuction of the given statements.</td>
+      <td> \( p \)</td>
+      <td> \( q \)</td>
+      <td> \( p \wedge q \)</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td rowspan="5" style="vertical-align: top; text-align: left;"><b>Disjucntion</b></td>
+      <td rowspan="5" style="vertical-align: top; text-align: center">\( \vee \)</td>
+      <td rowspan="5" style="vertical-align: top; text-align: left;">Two simple statements combined by the word ‘or’ (or an equivalent word) to form a compound statement, is known as disjunction of the given statements.</td>
+      <td> \( p \)</td>
+      <td> \( q \)</td>
+      <td> \( p \vee q \)</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>F</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td rowspan="5" style="vertical-align: top; text-align: left;"><b>Conditional<br>(Implication)</b></td>
+      <td rowspan="5" style="vertical-align: top; text-align: center">\( \Rightarrow \)</td>
+      <td rowspan="5" style="vertical-align: top; text-align: left;">Two simple statements combined by ‘if…then’ to form a compound statement, is known as conditional of the given statements.</td>
+      <td> \( p \)</td>
+      <td> \( q \)</td>
+      <td> \( p \Rightarrow q \)</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td rowspan="5" style="vertical-align: top; text-align: left;"><b>Biconditional <br> (Equivalence)</b></td>
+      <td rowspan="5" style="vertical-align: top; text-align: center">\( \Leftrightarrow \)</td>
+      <td rowspan="5" style="vertical-align: top; text-align: left;">Two simple statements combined with ‘if and only if’ (abbreviated as iff) to form a compound statement, is known as biconditional of the given statements.</td>
+      <td> \( p \)</td>
+      <td> \( q \)</td>
+      <td> \( p \Leftrightarrow q \)</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>T</td>
+    </tr>
+  </table>
+  <hr>
+  <b style="background-color: yellow;">#Terminology</b>
+  <br>
+  <br>
+  <table>
+    <tr>
+      <td><b>Negation</b></td>
+      <td>A statement which denies the given statement is known as the negation of the given statement. If \( p \) is a statement then \( \sim p \) is said to be the negation of the statement \( p \).</td>
+    </tr>
+    <tr>
+      <td><b>Tautology</b></td>
+      <td>A compound statement which is always true, whatever may be the truth values of its components, is known as tautology.</td>
+    </tr>
+    <tr>
+      <td><b>Contradiction</b></td>
+      <td>A compound statement which is always false, whatever may by the truth values of its components is known as contradiction.</td>
+    </tr>
+    <tr>
+      <td><b>Converse</b></td>
+      <td>If \( p \) and \( q \) are two simple statements then the conditional \( q \Rightarrow p \) is said to be the converse of the conditional \( p \Rightarrow q \).</td>
+    </tr>
+    <tr>
+      <td><b>Inverse</b></td>
+      <td>If \( p \) and \( q \) are two simple statements then the conditional \( \sim p \Rightarrow \sim q \) is said to be the inverse of the conditional \( p \Rightarrow q \).</td>   </tr>
+    <tr>
+      <td><b>Contrapositive</b></td>
+      <td>If \( p \) and \( q \) are two simple statements then the conditional \( \sim q \Rightarrow \sim p \) is said to be the contrapositive of the conditional \( p \Rightarrow q \).</td>
+    </tr>
+    <tr>
+      <td><b>Logically Equivalent</b></td>
+      <td>Two statements \( S_1 \) and \( S_2 \) are said to be logically equivalent if both have same truth values in the columns of the truth table. They are denoted by \( S_1 \equiv S_2 \).</td>
+    </tr>
+  </table>
+  <hr>
+  <b style="background-color: yellow;">#Laws of Logic</b>
+  <br>
+  <br>
+  <b>Primary Laws of Logic</b>
+  <br>
+  <table>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Law of Excluded Middle</b></td>
+      <td>Only statement \( p \) or \( \sim p \) is true. <br> A statement cannot be both true and false at the same time.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Law of Tautology</b></td>
+      <td>The statement \( p \text{ } \vee \sim p \) is always true and hence a tautology. <br> Thus, the disjunction of a statement and its negation is a tautology.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Law of Contradiction</b></td>
+      <td>The statement \( p \text{ } \wedge \sim p \) is always false and hence a contradiction. <br> Thus, the conjunction of a statement and its negation is a contradiction.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Law of (Involution/Double Negation)</b></td>
+      <td>The negation of negation of a statement is logically equivalent to a given statement. Symbolically, \( \sim ( \sim p) \equiv p \) .</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Law of Syllogism</b></td>
+      <td>If \( p \Rightarrow q \) and \( q \Rightarrow r \) then \( p \Rightarrow r \). That is \( (p \Rightarrow q) \wedge (q \Rightarrow r) \Rightarrow (p \Rightarrow r) \) .<br> This can be verified to be a tautology.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Law of Contraposition</b></td>
+      <td>\( (p \Rightarrow q) \equiv ((\sim q) \Rightarrow (\sim p)) \) <br> The conditional and its contrapositive are logically equivalent.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Inverse Law</b></td>
+      <td>\( (\sim p) \Rightarrow (\sim q) \equiv q \Rightarrow p \) <br> The inverse and the converse of a conditional are logically equivalent.</td>
+    </tr>
+  </table>
+  <hr>
+  <b>Secondary Laws of Logic</b>
+  <br>
+  <table>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Idempotent Law</b></td>
+      <td>\( p \wedge p \equiv p \)</td>
+      <td>\( p \vee p \equiv p \)</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Commutative Law</b></td>
+      <td>\( p \wedge q \equiv q \wedge p \)</td>
+      <td>\( p \vee q \equiv q \vee p \)</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Associative Law</b></td>
+      <td>\( p \wedge (q \wedge r) \equiv (p \wedge q) \wedge r \)</td>
+      <td>\( p \vee (q \vee r) \equiv (p \vee q) \vee r \)</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>Distributive Law</b></td>
+      <td>\( p \wedge (q \vee r) \Leftrightarrow (p \wedge q) \vee (p \wedge r) \)</td>
+      <td>\( p \vee (q \wedge r) \Leftrightarrow (p \vee q) \wedge (p \vee r) \)</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><b>De-Morgan's Law</b></td>
+      <td>\( \sim (p \wedge q) \equiv (\sim p \text{ } \vee \sim q) \)</td>
+      <td>\( \sim (p \vee q) \equiv (\sim p \text{ } \wedge \sim q) \)</td>
+    </tr>
+  </table>
+
+  <h2>Chapter 2 - Functions</h2>
+  <div>
+    <ol>
+      <li>Review</li>
+      <li>Function</li>
+      <ol type="a">
+        <li>Terminology</li>
+        <li>Equality of Two Functions</li>
+        <li>Special Types of Function</li>
+      </ol>
+      <li>Inverse Function</li>
+      <ol type="a">
+        <li>Property</li>
+      </ol>
+      <li>Composition of Functions and Composite Function</li>
+      <ol type="a">
+        <li>Properties</li>
+      </ol>
+      <li>Algebraic Function</li>
+      <ol type="a">
+        <li>Polynomial Function</li>
+        <ol type="i">
+          <li>Linear Function</li>
+          <ol>
+            <li>Identity Function</li>
+            <li>Constant Function</li>
+          </ol>
+          <li>Quadratic Function</li>
+          <li>Cubic Function</li>
+        </ol>
+      </ol>
+      <li>Transcendental Function</li>
+      <ol type="a">
+        <li>Trigonometric Function</li>
+        <li>Exponential Function</li>
+        <li>Logarithmic Function</li>
+        <ol type="i">
+          <li>Properties of Logarithmic Function</li>
+        </ol>
+        <li>Hyperbolic Function</li>
+        <ol type="a">
+          <li>Basic Formulas of Hyperbolic Function</li>
+        </ol>
+      </ol>
+    </ol>
+  </div>
+
+  <h2>Chapter 3 - Curve Sketching</h2>
+  <div>
+    <ol>
+      <li>Curve Sketching</li>
+      <ol type="a">
+        <li>Terminology</li>
+        <li>Characteristics</li>
+      </ol>
+      <li>Even and Odd Functions</li>
+      <li>Monotonicity of a Function</li>
+      <li>Transformations of Graphs</li>
+      <ol type="a">
+        <li>Shifting or translation</li>
+        <ol type="i">
+          <li>Leftward or Rightward</li>
+          <li>Upward or Downward</li>
+        </ol>
+        <li>Reflection</li>
+      </ol>
+      <li>Sketching of Graph</li>
+      <ol type="a">
+        <li>Quadratic function</li>
+        <li>Cubic function</li>
+        <li>Reciprocal function</li>
+        <li>Trigonometric function</li>
+        <li>Exponential function</li>
+        <li>Logarithmic function</li>
+      </ol>
+    </ol>
+  </div>
+  
+  <h2>Chapter 4 - Sequence and Series</h2>
+  <div>
+    <ol>
+      <li>Review</li>
+      <li>Harmonic Sequence and Harmonic Mean</li>
+      <li>Properties of Sequence</li>
+      <li><b>Proof:</b> Relation between A.M., G.M., and H.M.</li>
+      <ol type="a">
+        <li>Equation</li>
+        <li>Inequality</li>
+      </ol>
+      <li>Sum of Infinite Geometric Series</li>
+    </ol>
+  </div>
+
+  <h2>Chapter 5 - Matrices and Determinants</h2>
+  <div>
+    <ol>
+      <li>Matrix</li>
+      <ol type="a">
+        <li>Order of Matrix</li>
+      </ol>
+      <li>Special types of Matrices</li>
+      <li>Transpose of a Matrix</li>
+      <ol type="a">
+        <li>Properties of Transposed Matrices</li>
+      </ol>
+      <li>Determinant</li>
+      <ol type="a">
+        <li>Minors and Cofactors</li>
+        <li>Sarrus Rule</li>
+        <li>Properties</li>
+      </ol>
+      <li>Singular and Non-Singular Matrices</li>
+    </ol>
+  </div>
+
+  <h2>Chapter 6 - Quadratic Equations</h2>
+  <div>
+    <ol>
+      <li>Fundamental Theorem of Algebra</li>
+      <li>Roots of a Quadratic Equation</li>
+      <li><b>Proof:</b> The quadratic equation cannot have more than two roots</li>
+      <li>Nature of Roots</li>
+      <ol type="a">
+        <li>Discriminant</li>
+      </ol>
+      <li>Relation between Roots and Coefficients</li>
+      <li>Special Roots Condition</li>
+      <li>Formation of a Quadratic Equation</li>
+      <li>Common Root Condition</li>
+    </ol>
+  </div>
+
+  <h2>Chapter 7 - Complex Numbers</h2>
+  <div>
+    <ol>
+      <li>Notation</li>
+      <li>Product of Complex Numbers</li>
+      <li>The Imaginary Unit and Its powers</li>
+      <ol type="a">
+        <li>Note: \( \sqrt{-a} \sqrt{-b} \neq \sqrt{(-a)(-b)} \) </li>
+      </ol>
+      <li>Complex Plane and Argand Diagram</li>
+      <li>Conjugate of a Complex Number</li>
+      <ol type="a">
+        <li>Properties of Conjugates</li>
+      </ol>
+      <li>(Absolute Value/Modulus) of a Complex Number</li>
+      <ol type="a">
+        <li>Properties of (Absolute Values/Moduli)</li>
+        <li><b>Proof:</b> The Triangle Inequality</li>
+      </ol>
+      <li>Square Roots of Complex Number</li>
+    </ol>
+  </div>
+
+  <center>
+  <h1>Unit 2 : Trigonometry</h1>
+  </center>
+  <h2>Chapter 8 - Inverse Circular Functions and Trigonometric Equations</h2>
+  <div>
+    <ol>
+      <li>Circular Functions</li>
+      <li>Inverse Circular Functions</li>
+      <ol type="a">
+        <li>Some Useful Results</li>
+      </ol>
+      <li>Introduction of Trigonometric Equations</li>
+      <ol type="a">
+        <li>General Solution of Trigonometric Equation</li>
+        <li>Trigonometric Equations in Other Forms</li>
+      </ol>
+    </ol>
+  </div>
+  
+  <center>
+  <h1>Unit 3 : Analytic Geometry</h1>
+  </center>
+  <h2>Chapter 9 - Analytic Geometry</h2>
+  <div>
+    <ol>
+      <li>Review of Equations of Straight Lines</li>
+      <ol type="a">
+        <li>Standard Forms of Equation of Line</li>
+        <ol type="i">
+          <li>Slope-Intercept Form</li>
+          <li>Double-Intercept Form</li>
+          <li>Normal/Perpendicular Form</li>
+        </ol>
+        <li>Point Forms of Equation of Line</li>
+        <ol type="i">
+          <li>Point Slope Form</li>
+          <li>Two Point Form</li>
+        </ol>
+        <li>Linear Equation</li>
+        <ol type="i">
+          <li>Reduction of linear equation into</li>
+          <ol>
+            <li>Slope-Intercept Form</li>
+            <li>Double-Intercept Form</li>
+            <li>Normal/Perpendicular Form</li>
+          </ol>
+        </ol>
+        <li>Point of Intersection of Two Straight Lines</li>
+        <li>Line through the intersection of two given lines</li>
+        <li>Condition of concurrency of three straight lines</li>
+        <li>Angle between two straight lines</li>
+        <li>Important Points of Consurrencies</li>
+        <ol type="i">
+          <li>Orthocentre</li>
+          <li>Circumcentre</li>
+          <li>Incentre</li>
+          <li>Centroid</li>
+        </ol>
+        <li>The two sides of straight lines
+      </ol>
+      <li>Length of the Perpendicular from a Point on a Straight Line \( x \cos \alpha + y \sin \alpha = p\)</li>
+      <li>Bisectors of the Angles between Two Lines</li>
+    </ol>
+  </div>
+
+  <h2>Chapter 10 - Pair of Straight Lines</h2>
+  <div>
+    <ol>
+      <li>General Equation of Second Degree</li>
+      <li>Homogeneous Equation of Second Degree</li>
+      <li>Angle between the line pair represented by \( ax^2 + 2hxy + by^2 = 0 \) </li>
+      <ol type="a">
+        <li>Condition of perpendicularity</li>
+        <li>Condition for coincident lines</li>
+      </ol>
+      <li>Bisectors of the Angles between the Pair of Lines represented by \( ax^2 + 2hxy + by^2 = 0 \) </li>
+      <li>Condition that the General Equation of Second Degree may Represent a Line Pair</li>
+      <ol type="a">
+        <li>Lines joining the Origin to the Intersection of a Line and a Curve</li>
+      </ol>
+    </ol>
+  </div>
+
+  <h2>Chapter 11 - Coordinates in Space</h2>
+  <div>
+    <ol>
+      <li>Introduction</li>
+      <li>Points in Space</li>
+      <li>Distance between Two Points</li>
+      <ol type="a">
+        <li>Section Formula</li>
+        <ol type="i">
+          <li>Internal Division</li>
+          <li>External Division</li>
+        </ol>
+      </ol>
+      <li>Direction cosines of a line</li>
+      <ol type="a">
+        <li>Direction cosines of the coordinate axes</li>
+        <li>Direction cosines of the Line through Two Given Points</li>
+        <li>Projection</li>
+        <ol type="i">
+          <li>Projection of a point on a line or a plane</li>
+          <li>Projection of a line segment on line</li>
+          <li>Projection of a broken line on a given line</li>
+          <li>Projection of a line joining two points \( \text{P}(x_1, y_1, z_1) \) and \( \text{Q}(x_2, y_2, z_2) \) on the another line with direction cosines \( l, m, n \)</li>
+        </ol>
+        <li>Direction ratios</li>
+        <li>Angle between two lines</li>
+        <ol type="i">
+          <li>Expression for \( \sin \theta \) </li>
+          <li>Condition of perpendicularity of two lines</li>
+          <li>Condition of parallelism of two lines</li>
+
+        </ol>
+        <li>Angle between two straight lines whose direction ratios are given</li>
+      </ol>
+    </ol>
+  </div>
+
+  <center>
+  <h1>Unit 4 : Vectors</h1>
+  </center>
+  <h2>Chapter 12 - Vectors</h2>
+  <div>
+    <ol>
+      <li>Review of Composition and Resolution of Vectors</li>
+      <ol type="a">
+        <li>Scalars and Vectors</li>
+        <li>Notation and Representation</li>
+        <li>Vectors in ordered pair form</li>
+        <li>Modulus of a vector</li>
+        <li>Different types of vectors</li>
+        <ol type="i">
+          <li>Unit vector</li>
+          <li>Null/zero vector</li>
+          <li>Negative vector</li>
+          <li>Like vector</li>
+          <li>Unlike vector</li>
+          <li>Equal vectors</li>
+        </ol>
+        <li>Addition of Two Vectors</li>
+        <ol type="i">
+          <li>Triangle Law of Vector Addition</li>
+        </ol>
+        <li>Difference of Two Vectors</li>
+        <li>Multiplication of vector by a scalar</li>
+        <li>Laws of vector algebra</li>
+        <ol type="i">
+          <li>Commutative law</li>
+          <li>Associative law</li>
+          <li>Distributive law</li>
+        </ol>
+        <li>The unit vectors i, j, and k</li>
+      </ol>
+      <li>Collinear and Non-collinear Vectors</li>
+      <ol type="a">
+        <li>Two Dimensional Vectors</li>
+        <li>Decomposition of a vector in a plane</li>
+      </ol>
+      <li>Coplanar and Non-coplanar Vectors</li>
+      <ol type="a">
+        <li>Three Dimensional Vectors</li>
+        <li>Decomposition of a space vector</li>
+      </ol>
+      <li>Linear Combination of Vectors</li>
+      <li>Linearly Dependent and Independent Vectors</li>
+    </ol>
+  </div>
+
+  <center>
+  <h1>Unit 5 : Statistics and Probability</h1>
+  </center>
+  <h2>Chapter 13 - Measure of Dispersion</h2>
+  <div>
+    <ol>
+      <li>Measure of Dispersion</li>
+      <ol type="a">
+        <li>Arithmetic Mean</li>
+        <ol type="i">
+          <li>Direct method</li>
+          <li>Deviation (short cut) method and Step deviation method</li>
+        </ol>
+        <li>Combined Mean</li>
+        <li>Partition Values</li>
+        <ol type="i">
+          <li>Median</li>
+          <li>Quartiles</li>
+        </ol>
+        <li>Mode</li>
+        <li>Relation between mean, median and mode</li>
+        <ol type="i">
+          <li>Symmetric distribution</li>
+          <li>Asymmetric distribution</li>
+        </ol>
+        <li>Meaning of dispersion</li>
+        <li>Absolute and relative measures</li>
+      </ol>
+      <li>Standard Deviation</li>
+      <li>Variance</li>
+      <ol type="a">
+        <li>Combined standard deviaton</li>
+      </ol>
+      <li>Coefficient of Varience</li>
+      <li>Skewness</li>
+      <ol type="a">
+        <li>Positive and Negative skewness</li>
+        <li>Measure of skewness</li>
+      </ol>
+      <li>Karl Pearson's Coefficient of Skewness</li>
+    </ol>
+  </div>
+
+  <h2>Chapter 14 - Probability</h2>
+  <div>
+    <ol>
+      <li>Introduction</li>
+      <li>Some Basic Terms including Independent Cases</li>
+      <ol type="a">
+        <li>Experiment</li>
+        <li>Trial and Event</li>
+        <li>Exhaustive cases</li>
+        <li>Equally likely cases</li>
+        <li>Mutually exclusive cases/events</li>
+        <li>Favourable cases</li>
+        <li>Independent cases/events</li>
+        <li>Permutation and Combination</li>
+      </ol>
+      <li>Mathematical Definition of Probability</li>
+      <ol type="a">
+        <li>Limitations of classical definition of probability</li>
+      </ol>
+      <li>Empirical Definition of Probability</li>
+      <ol type="a">
+        <li>Axiomatic Probabililty</li>
+        <li>Sample Space</li>
+        <li>Favourable cases</li>
+        <li>Probability</li>
+      </ol>
+      <li>Two Basic Laws of Probability</li>
+      <ol type="a">
+        <li>Addition Theorem (Theorem of total probability)</li>
+        <li>Multiplication Theorem (Theorem of compound probability)</li>
+      </ol>
+    </ol>
+  </div>
+
+  <center>
+  <h1>Unit 6 : Calculus</h1>
+  </center>
+  <h2>Chapter 15 - Limits and Continuity</h2>
+  <div>
+    <ol>
+      <li>Limit of a Function</li>
+      <li>Indeterminate Forms</li>
+      <li>Algebraic Properties of Limit</li>
+      <li>Standard Limits</li>
+      <ol type="a">
+        <li>Algebraic Limit</li>
+        <li>Trigonometric Limits</li>
+        <ol type="i">
+          <li><b>Proof:</b> \( \lim_{x \to 0} \frac{\sin x}{x} = 1 \) </li>
+        </ol>
+        <li>Logarithmic and Exponential Limits</li>
+      </ol>
+      <li>Right Hand Limit and Left Hand Limit</li>
+      <li>Continuity of a Function</li>
+      <li>Discontinuity of a Function and Its Types</li>
+      <ol type="a">
+        <li>Jump/Ordinary Discontinuity</li>
+        <li>Removable Discontinuity</li>
+        <li>Infinite Discontinuity</li>
+      </ol>
+    </ol>
+  </div>
+
+  <h2>Chapter 16 - The Derivatives</h2>
+  <div>
+    <ol>
+      <li>Derivative and Differentiation</li>
+      <ol type="a">
+        <li>(Definition/First Principle) of Derivative</li>
+      </ol>
+      <li>Rules of Differentiation</li>
+      <li>Parametric Differentiation</li>
+      <li>Implicit Differentiation</li>
+      <li>Successive Differentiation</li>
+      <li>Derivatives of Trigonometric Functions</li>
+      <ol type="a">
+        <li>Derivatives of Inverse Trigonometric Functions</li>
+      </ol>
+      <li>Derivatives of Exponential and Logarithmic Functions</li>
+    </ol>
+  </div>
+
+  <h2>Chapter 17 - Applications of Derivatives</h2>
+  <div>
+    <ol>
+      <li>Geometric Interpretation of Derivative</li>
+      <ol type="a">
+        <li>Secant</li>
+        <li>Tangent</li>
+      </ol>
+      <li>Applications of 1st Derivative</li>
+      <ol type="a">
+        <li>To find the stationary/critical point</li>
+        <li>To determine the monotonicity of a function</li>
+        <li>To find the global (absolute) extreme values</li>
+      </ol>
+      <li>Applications of 2nd Derivative</li>
+      <ol type="a">
+        <li>To find the point of inflection</li>
+        <li>To determine the concavity of a function</li>
+        <li>To find the local (relative) extreme values</li>
+      </ol>
+    </ol>
+  </div>
+
+  <h2>Chapter 18 - Antiderivatives</h2>
+  <div>
+    <ol>
+      <li>Antiderivative (Indefinite Integral) and Antidifferentiation (Integration)</li>
+      <li>Basic Properties of Indefinite Integral</li>
+      <li>Integration as reverse of Differentiation</li>
+      <ol type="a">
+        <li>Integrals involving algebraic function</li>
+        <li>Integrals involving trigonometric function</li>
+        <li>Integral of exponential function</li>
+      </ol>
+      <li>Composite Function Rule of Integration</li>
+      <li>Integration by Substitution</li>
+      <ol type="a">
+        <li>Integration of trigonometric functions</li>
+        <li>Integration involving exponential function</li>
+      </ol>
+      <li>Integration by Trigonometric Substitution</li>
+      <li>Product Rule of Integration (Integration by Parts)</li>
+      <ol type="a">
+        <li>ILATE Rule</li>
+        <li>DI Rule</li>
+      </ol>
+      <li>Definite Integrals</li>
+      <ol type="a">
+        <li>Fundamental Theorem of Integral Calculus</li>
+        <li>Change of Limits</li>
+      </ol>
+      <li>Definite Integral as Area under curve</li>
+      <ol type="a">
+        <li>Area between two curves</li>
+      </ol>
+    </ol>
+  </div>
+
+  <center>
+  <h1>Unit 7 : Computational Methods</h1>
+  </center>
+  <h2>Chapter 19 - Numerical Computation</h2>
+  <div>
+    <ol>
+      <li>Introduction</li>
+      <ol type="a">
+        <li>Characteristics of numerical computation</li>
+        <ol type="i">
+          <li>Accuracy</li>
+          <li>Rate of convergence</li>
+          <li>Numerical stability</li>
+          <li>Efficiency</li>
+        </ol>
+      </ol>
+      <li>Root of an Equation</li>
+      <ol type="a">
+        <li>Initial approximation</li>
+        <li>Convergence</li>
+        <li>Rate of convergence</li>
+      </ol>
+      <li>Bisection Methods</li>
+      <li>Newton-Raphson Method</li>
+    </ol>
+  </div>
+
+  <h2>Chapter 20 - Numerical Integration</h2>
+  <div>
+    <ol>
+      <li>Introduction: Numerical Integration</li>
+      <ol type="a">
+        <li>Definite Integration and Area Computation</li>
+        <li>Rectangle Rule or Mid-point Rule</li>
+      </ol>
+      <li>Trapezial (Trapezoidial) Rule</li>
+      <ol type="a">
+        <li>Composite Trapezial (Trapezoidial) Rule</li>
+        <li>Estimation of Error</li>
+        <ol type="i">
+          <li>Trapezial (Trapezoidial) Error</li>
+        </ol>
+      </ol>
+      <li>Simpson's Rule</li>
+      <ol type="a">
+        <li>Composite Simpson's 1/3 rule</li>
+        <li>Estimation of Error</li>
+        <ol type="i">
+          <li>Simpson's Error</li>
+        </ol>
+      </ol>
+    </ol>
+  </div>
+
+  <center>
+  <h1>Unit 8 : Mechanics</h1>
+  </center>
+  <h2>Chapter 21 - Statics</h2>
+  <div>
+    <ol>
+      <li>Introduction</li>
+      <ol type="a">
+        <li>Fundamental Quantities and their units</li>
+        <li>Statics and Dynamics</li>
+        <li>Basic Terms</li>
+        <ol type="i">
+          <li>Body</li>
+          <li>Rigid Body</li>
+          <li>Particle</li>
+          <li>Mass</li>
+        </ol>
+      </ol>
+      <li>Force</li>
+      <ol type="a">
+        <li>Types of Force</li>
+        <ol type="i">
+          <li>Attraction</li>
+          <li>Reaction</li>
+          <li>Tension</li>
+        </ol>
+        <li>Units of Force</li>
+        <li>Equilibrium of Forces</li>
+        <li>Principle of Transmissibility of Forces</li>
+      </ol>
+      <li>Composition of Force</li>
+      <li>Parallelogram of Forces</li>
+      <li>Resultant of two given forces</li>
+      <li>Resolution of Forces</li>
+      <ol type="a">
+        <li>Resolution of a given force into two components along two given direction</li>
+        <li>Resolution of a given force into two components at right angles to one another</li>
+        <li>Theorem</li>
+      </ol>
+      <li>Resolution of coplanar forces acting at a point</li>
+      <ol type="a">
+        <li>Forces in Equilibrium</li>
+      </ol>
+    </ol>
+  </div>
+
+  <h2>Chapter 22 - Dynamics</h2>
+  <div>
+    <ol>
+      <li>Introduction</li>
+      <ol type="a">
+        <li>Kinematics and Kinetics</li>
+        <li>Basic Terms</li>
+        <ol type="i">
+          <li>Motion</li>
+          <li>Rest</li>
+        </ol>
+      </ol>
+      <li>Motion of a particle in a Straight Line</li>
+      <ol type="a">
+        <li>Uniform Motion</li>
+        <li>Uniformly accelerated motion</li>
+      </ol>
+      <li>Motion with Uniform Acceleration</li>
+      <ol type="a">
+        <li>First equation of motion</li>
+        <li>Second equation of motion</li>
+        <li>Third equation of motion</li>
+      </ol>
+      <li>Motion under gravity</li>
+      <li>Motion Down a Smooth Inclined Plane</li>
+      <ol type="a">
+        <li>For body sliding downwards</li>
+        <li>For body climbing (or moving) upwards</li>
+      </ol>
+    </ol>
+  </div>
+
+</body>
+</html>
