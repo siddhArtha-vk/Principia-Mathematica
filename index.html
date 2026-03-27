@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Principia Mathematica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basicmath</title>
     <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="background-color: yellow;">Principia Mathematica</h1>
-    <p>Principia mathematica is developed to provide the online notes of mathematics from class 6 to class 12. </p>
-    <a href="Files/optmath10.html">Optional Mathematics 10</a>
-    <br>
-    <a href="Files/math11.html">Mathematics 11</a>
-    <br>
-    <a href="Files/math12.html">Mathematics 12</a>
+
+    <header><h2>Basicmath</h2></header>
+    
+    <nav>
+        <button onclick="showPage('introduction')"><b>Introduction</b></button>
+        <button onclick="showPage('areas')"><b>Areas</b></button>
+        <button onclick="showPage('notes')"><b>Notes</b></button>
+    </nav>
+
+    <div class="content" id="content">
+      <div id="introduction" class="page">
+        <div class="card">
+            <h3>Introduction</h3>
+            <p>Welcome to Basicmath — a personal journey through the world of mathematics.</p>
+            <p>This website is a carefully curated collection of mathematical ideas, concepts, and theories that I have studied from Class 6 to Class 12. From the fundamentals of arithmetic and algebra to the depths of calculus, coordinate geometry, and statistics, each topic is presented in a clear and concise way to make learning intuitive and engaging.</p>
+            <p>The goal of this platform is not just to summarize textbooks, but to build a structured understanding of mathematics — connecting concepts across different levels and showing how they evolve over time. Whether you are a student looking for revision, a beginner seeking clarity, or simply someone who enjoys mathematics, this site aims to make complex ideas simpler and more accessible.</p>
+        </div>
+      </div>
+
+      <div id="areas" class="page" style="display:none;">
+        <div class="card">
+            A
+        </div>
+      </div>
+
+      <div id="notes" class="page" style="display:none;">
+        <div class="card">
+            N
+        </div>
+      </div>
+    </div>
+
+    <script>
+    function showPage(pageId) {
+        let pages = document.getElementsByClassName("page");
+        for (let p of pages) {
+            p.style.display = "none";
+        }
+        document.getElementById(pageId).style.display = "block";
+    }
+    </script>
+    
+    <footer>
+        <p>© 2026 Basicmath</p>
+    </footer>
 </body>
 </html>
